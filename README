@@ -1,18 +1,20 @@
-Linux kernel
-============
+## SPKN Kernel
+A fork from Parbinder7's kernel for Exynos 9611 Devices
 
-This file was moved to Documentation/admin-guide/README.rst
+### GOAL
 
-Please notice that there are several guides for kernel developers and users.
-These guides can be rendered in a number of formats, like HTML and PDF.
+Goal of this project is returning susfs to exynos 9611 kernel.
+Few months ago, Susfs removed from 3 major 9611 kernel Because of KSUN hiding improvement, But that feature still can't hide some important props and Some apps can detect props of custom rom and caught you from using it.
+## Installation
 
-In order to build the documentation, use ``make htmldocs`` or
-``make pdfdocs``.
+**☠️Before doing anything, If you have installed oneui or a one ui image from another phone on your phone, Installing this kernel could be result in soft bricking your phone. So please don't install it☠️**
+Depending on your device model, download the device kernel from [Releases](https://github.com/istnein/SPKN-kernel-for-9611/releases) page.
+Then go to twrp and flash it on your device.
 
-There are various text files in the Documentation/ subdirectory,
-several of them using the Restructured Text markup notation.
-See Documentation/00-INDEX for a list of what is contained in each file.
-
-Please read the Documentation/process/changes.rst file, as it contains the
-requirements for building and running the kernel, and information about
-the problems which may result by upgrading your kernel.
+Also If you need susfs, Download and Install it from [this page](https://github.com/sidex15/susfs4ksu-module/releases).
+## Credits
+[Ashstone's Kernel](https://github.com/ashstone-dev/android_kernel_samsung_universal9611/)
+[Felcox's kernel](https://github.com/Parbindar7/android_kernel_samsung_universal9611)
+[Linux4's kernel](https://github.com/linux4-bringup-priv/android_kernel_samsung_gta4xl)
+[Kernelsu next](https://github.com/KernelSU-Next/KernelSU-Next)
+[SUSFS](https://github.com/sidex15/susfs4ksu-module)
